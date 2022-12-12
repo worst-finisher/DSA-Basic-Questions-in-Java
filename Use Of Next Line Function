@@ -1,0 +1,9 @@
+//Now we print out any statement 2 or 3 times but in every next line, where we use 'ln' and '\n' function.
+public class Main
+{
+      public static void main(String args[])
+      {
+      System.out.println("Ritik");
+      System.out.print("Ritik"\n);
+      }
+}      
