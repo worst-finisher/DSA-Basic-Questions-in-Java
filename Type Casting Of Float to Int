@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String args[])
+    {
+        float marks = 99.9999f;
+        int b = (int)marks;
+        System.out.print("marks = ");
+        System.out.print(b);
+    }
+}
+//it is the forcefully we taking the value in int in which we loss some data which may be imp. or may be not.
