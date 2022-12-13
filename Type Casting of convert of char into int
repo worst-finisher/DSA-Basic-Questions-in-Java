@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String args[])
+    {
+        char ch = 'a';
+        int num = ch;
+        System.out.print(num);
+    }
+}
+
+//output will become is the ASCII value of the given number.
