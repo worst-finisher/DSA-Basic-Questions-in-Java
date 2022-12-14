@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String args[])
+    {
+        int a= 10;
+        int b= --a; //pre decrement unary operator.
+        int c=11;
+        int d=c++; //post increment unary operator.
+        System.out.println("a = "+a);
+        System.out.println("b = "+b);
+        System.out.println("c = "+c);
+        System.out.println("d = "+d);
+    }
+}
