@@ -1,0 +1,11 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String args[])
+    {
+        char ch1= 'a';
+        char ch2= 'b';
+        int sub = (ch2-ch1);
+        System.out.print(sub);
+    }
+}
