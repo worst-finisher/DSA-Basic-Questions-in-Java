@@ -1,0 +1,13 @@
+public class Main 
+{
+    public static void main(String args[])
+    {
+        int a= 50;
+        int b= 2;
+        System.out.println("sum = " + (a+b));
+        System.out.println("substract = " + (a-b));
+        System.out.println("multiply = " + (a*b));
+        System.out.println("divide = " + (a/b));
+        System.out.println("modulous = " + (a%b));
+    }
+}
