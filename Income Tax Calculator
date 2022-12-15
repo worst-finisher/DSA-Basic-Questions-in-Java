@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        float income= sc.nextFloat();
+        if(income<500000)
+        {
+            System.out.print("Income On Hand Without Any Tax");
+        }
+        else if(income>500000 && income<=1000000)
+        {
+            System.out.print("Income = " + (income - income*0.2)); // because here the employee have to pay 20% tax.
+        }
+        else if(income>1000000)
+        {
+            System.out.print("Income = " + (income - income*0.3)); // because here the employee have to pay 30% tax.
+        }
+    }
+}
