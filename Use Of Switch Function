@@ -1,0 +1,53 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String args[])
+    {
+        //*******************************// 
+        //                               //
+        //          MENU CARD            //
+        //                               //
+        //*******************************//
+        System.out.println("|*********************************|");
+        System.out.println("|********** ||WELCOME|| **********|");
+        System.out.println("|*********************************|");
+        System.out.println("|--> Choose 1 For Main Course     |");
+        System.out.println("|--> Choose 2 For Chinese Items   |");
+        System.out.println("|--> Choose 3 For Desserts        |");
+        System.out.println("|*********************************|");
+        System.out.println("");
+        Scanner sc = new Scanner(System.in);
+        int Menu = sc.nextInt();
+        switch(Menu)
+        {
+            case 1 : System.out.println("In Main Course");
+                     System.out.println("");
+                     System.out.println("a. Yellow Dal & Chapati");
+                     System.out.println("b. Paneer & Chapati");
+                     System.out.println("c. Chaap & Chapati");
+                     System.out.println("");
+                     System.out.println("SORRY...In Main Course Only These Dishes Are Available.");
+                        break;
+            case 2 : System.out.println("In Chinese Items");
+                     System.out.println("");
+                     System.out.println("a. Chowmein");
+                     System.out.println("b. Burger");
+                     System.out.println("c. Pizza");
+                     System.out.println("d. Pasta");
+                     System.out.println("");
+                     System.out.println("SORRY...In Chinese Items Only These Dishes Are Available.");
+                        break;
+            case 3 : System.out.println("In Dessert :-");
+                     System.out.println("");
+                     System.out.println("a. Pede");
+                     System.out.println("b. Dudh Barfi");
+                     System.out.println("c. Kaju Katli");
+                     System.out.println("d. MotiChur ke Laddu");
+                     System.out.println("e. Rasgulla");
+                     System.out.println("");
+                     System.out.println("SORRY... In Dessert Only These Dishes Are Available.");
+                        break;
+            default : System.out.print("Error 404 ; PLEASE CHOOSE A VALID OPTION");
+        }
+    }    
+}
