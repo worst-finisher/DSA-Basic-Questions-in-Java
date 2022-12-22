@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String Marks = (n>=33) ? "Pass":"Fail";
+        System.out.println(Marks);
+        
+    }
+}
