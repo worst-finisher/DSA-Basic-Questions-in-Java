@@ -1,0 +1,13 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String args[])
+    {
+        int i = 0;
+        while(i<100) //we can edit here the value of i.
+        {
+            System.out.println("Hello World");
+            i++;
+        }
+    }
+}
