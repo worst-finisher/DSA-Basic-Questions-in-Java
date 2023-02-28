@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main 
+{
+    public static void PHW()
+    {
+        System.out.println("My Name Is Ritik Gupta");
+        System.out.println("My Name Is Ritik Gupta");
+        System.out.println("My Name Is Ritik Gupta");
+        System.out.println("My Name Is Ritik Gupta");
+        System.out.println("My Name Is Ritik Gupta");
+    }
+    public static void main(String arg[])
+    {
+        PHW();
+    }
+}
