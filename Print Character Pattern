@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String arg[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        char ch = 'A';
+        System.out.println("Print Character Pattern:-");
+        System.out.println();
+        int i,j;
+        for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=i;j++)
+            {
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println();
+        }
+    }
+}
