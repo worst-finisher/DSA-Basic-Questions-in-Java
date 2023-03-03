@@ -1,0 +1,68 @@
+import java.util.*;
+public class Main 
+{
+    public static int add(int a,int b)
+    {
+        int add = a+b;
+        return add;
+    }
+    public static int sub(int a,int b)
+    {
+        int sub = a-b;
+        return sub;
+    }
+    public static int div(int a,int b)
+    {
+        int div = a/b;
+        return div;
+    }
+    public static int mul(int a,int b)
+    {
+        int mul = a*b;
+        return mul;
+    }
+    public static void main(String arg[])
+    {
+        System.out.println("*********************************************************");
+        System.out.println("********************** CALCULATOR ***********************");
+        System.out.println("*********************************************************");
+        System.out.println("*                                                       *");
+        System.out.println("*  -> Firstly Give The Input Values For A & B           *");
+        System.out.println("*  -> Now For Performing The Calculation Task Give :-   *");
+        System.out.println("*  -> 1 For Addition                                    *");
+        System.out.println("*  -> 2 For Substraction                                *");
+        System.out.println("*  -> 3 For Division                                    *");
+        System.out.println("*  -> 4 For Multiplication                              *");
+        System.out.println("*                                                       *");
+        System.out.println("*********************************************************");
+        System.out.println("");
+        System.out.println("");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter The Value Of A :- ");
+        int a = sc.nextInt();
+        System.out.print("Enter The Value Of B :- ");
+        int b = sc.nextInt();
+        System.out.print("Enter The Number Of The Operation To Be Performed :- ");
+        int n = sc.nextInt();
+        if(n==1)
+        {
+            System.out.println("");
+            System.out.println("So Addition Will Be :- "+add(a,b));
+        }
+        else if(n==2)
+        {
+            System.out.println("");
+            System.out.println("So Substraction Will Be :- "+sub(a,b));
+        }
+        else if(n==3)
+        {
+            System.out.println("");
+            System.out.println("So Division Will Be :- "+div(a,b));
+        }
+        else if(n==4)
+        {
+            System.out.println("");
+            System.out.println("So Multiplication Will Be :- "+mul(a,b));
+        }
+    }
+}
