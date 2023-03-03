@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main 
+{
+    public static int fact(int n)
+    {
+        int f = 1,i;
+        for(i=1;i<=n;i++)
+        {
+            f = f*i;
+        }
+        return f;
+    }
+    public static int binocof(int n,int r)
+    {
+        int fact_n = fact(n);
+        int fact_r = fact(r);
+        int fact_nmr = fact(n - r);
+        int binocof = fact_n/(fact_r*fact_nmr);
+        return binocof;
+    }
+    public static void main(String arg[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int r = sc.nextInt();
+        System.out.println(binocof(n,r));
+    }
+}
