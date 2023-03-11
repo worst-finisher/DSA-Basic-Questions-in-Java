@@ -1,0 +1,47 @@
+import java.util.*;
+public class Main 
+{
+    public static String Res(String menu[],int key)
+    {
+        for(int i=0;i<menu.length;i++)
+        {
+            if(i==key)
+            {
+                return menu[i];
+            }
+        }
+        return "0";
+    }
+    public static void main(String arg[])
+    {
+        System.out.println("***********************************************************");
+        System.out.println("******************* Jung Food Menu Card *******************");
+        System.out.println("***********************************************************");
+        System.out.println("*** --> Press 0 For Maggie 😋                           ***");
+        System.out.println("*** --> Press 1 For Pizza 😋                            ***");
+        System.out.println("*** --> Press 2 For Burger 😋                           ***");
+        System.out.println("*** --> Press 3 For Chowmein 😋                         ***");
+        System.out.println("*** --> Press 4 For Pasta 😋                            ***");
+        System.out.println("*** --> Press 5 For Adding Cheese in Maggie 😋 😍       ***");
+        System.out.println("*** --> Press 6 For Adding Cheese in Pizza 😋 😍        ***");
+        System.out.println("*** --> Press 7 For Adding Cheese in Burger 😋 😍       ***");
+        System.out.println("*** --> Press 8 For Adding Cheese in Chowmein 😋 😍     ***");
+        System.out.println("*** --> Press 9 For Adding Cheese in Pasta 😋 😍        ***");
+        System.out.println("***********************************************************");
+        System.out.println("***********************************************************");
+        System.out.println();
+        Scanner sc = new Scanner(System.in);
+        int key = sc.nextInt();
+        String menu[]={"Maggie","Pizza","Burger","Chowmein","Pasta","Cheese Maggie","Cheese Pizza","Cheese Burger","Cheese Chowmein","Cheese Pasta"};
+        String order = Res(menu,key);
+        if(order!="0")
+        {
+            System.out.println("Ok Sir You Order "+order);
+            System.out.println(" Please Wait For Some Time 😉 😉");
+        }
+        else
+        {
+            System.out.print("🙂 ERROR 404 : Dish Not Found 🙂");
+        }
+    }
+}
