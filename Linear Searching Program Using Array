@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main
+{
+    public static int LinearSearch(int num[],int n)
+    {
+        for(int i=0;i<num.length;i++)
+        {
+            if(num[i]==n)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+    public static void main(String arg[])
+    {
+        int num[]={1,2,4,6,10,11,19,20};
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int index = LinearSearch(num,n);
+        if(index==-1)
+        {
+            System.out.print("LinearSearch not possible");
+        }
+        else
+        {
+            System.out.print("LinearSearch = "+index);
+        }
+    }
+}
