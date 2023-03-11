@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main 
+{
+    public static int getSmaller(int num[])
+    {
+        int Smaller = Integer.MAX_VALUE;
+        for(int i=0;i<num.length;i++)
+        {
+            if(Smaller>num[i])
+            {
+                Smaller=num[i];
+            }
+        }
+        return Smaller;
+    }
+    public static void main(String arg[])
+    {
+        int num[]={1,8,6,7,3,9,10,5,16,2};//Here We Can Also Take Any Input Or Values For Num .
+        int getSmaller = getSmaller(num);
+        System.out.print("The Smallest Number Of The Given Array = "+ getSmaller);
+    }
+}
