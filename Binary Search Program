@@ -1,0 +1,34 @@
+import java.util.*;
+public class Main 
+{
+    public static int binary(int num[],int key)
+    {
+        int low = 0;
+        int high = (num.length - 1);
+        for(;low<=high;)
+        {
+            int mid = (low+high)/2;
+            if(num[mid]==key)
+            {
+                return mid;
+            }
+            else if(num[mid]<key)
+            {
+                low = mid+1;
+            }
+            else if(num[mid]>key)
+            {
+                high = mid-1;
+            }
+        }
+        return -1;
+    }
+    public static void main(String arg[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int key = sc.nextInt();
+        int num[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+        int binary=binary(num,key);
+        System.out.print(binary);
+    }
+}
